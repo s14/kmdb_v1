@@ -15,21 +15,21 @@ ActiveRecord::Schema.define(version: 20131115023054) do
 
   create_table "actors", force: true do |t|
     t.string "name"
-    t.string "bio"
+    t.text   "bio"
     t.string "image_url"
     t.string "dob"
   end
 
   create_table "directors", force: true do |t|
     t.string "name"
-    t.string "bio"
+    t.text   "bio"
     t.string "image_url"
     t.string "dob"
   end
 
   create_table "movies", force: true do |t|
     t.string  "title"
-    t.string  "year"
+    t.integer "year"
     t.integer "duration"
     t.text    "description"
     t.string  "image_url"

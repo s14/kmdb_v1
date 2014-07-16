@@ -9,13 +9,13 @@
         Movie
       </dt>
       <dd>
-        <p><%= Movie.find(@role.movie_id).title %></p>
+        <p><%= @role.movie.title %></p>
       </dd>
       <dt>
         Actor
       </dt>
       <dd>
-        <p><%= Actor.find(@role.actor_id).name %></p>
+        <p><%= @role.actor.name %></p>
       </dd>
     </dl>
   </div>

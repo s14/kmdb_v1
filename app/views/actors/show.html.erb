@@ -32,9 +32,9 @@
 <div class="row">
   <div class="col-md-12">
     <ul>
-      <li>Movie 1</li>
-      <li>Movie 2</li>
-      <li>Movie 3</li>
+      <% @actor.movies.each do |movie| %>
+        <li><%= movie.title %> (<%= movie.year %>)</li>
+      <% end %>
     </ul>
   </div>
 </div>

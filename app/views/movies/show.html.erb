@@ -14,7 +14,7 @@
       <dt>
       </dt>
       <dd>
-        <p><%= Director.find(@movie.director_id).name %></p>
+        <p><%= @movie.director.name %></p>
       </dd>
       <dt>
       </dt>
@@ -32,9 +32,14 @@
 <div class="row">
   <div class="col-md-12">
     <ul>
-      <li>Actor 1</li>
-      <li>Actor 2</li>
-      <li>Actor 3</li>
+      <% @movie.actors.each do |actor| %>
+        <li><%= actor.name %></li>
+      <% end %>
     </ul>
   </div>
 </div>
+
+
+
+
+

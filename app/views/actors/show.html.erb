@@ -1,4 +1,29 @@
-<pre><%= @actor.to_yaml %></pre>
+<div class="page-header">
+  <h1>Actor Details</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>
+        <img src="<%= @actor.image_url %>" width="100">
+      </dt>
+      <dd>
+        <p class="lead"><%= @actor.name %></p>
+      </dd>
+      <dt>
+      </dt>
+      <dd>
+        <p><%= @actor.dob %></p>
+      </dd>
+      <dt>
+      </dt>
+      <dd>
+        <p><%= @actor.bio %></p>
+      </dd>
+    </dl>
+  </div>
+</div>
 
 <div class="page-header">
   <h2>Filmography</h2>
@@ -13,3 +38,5 @@
     </ul>
   </div>
 </div>
+
+<hr>

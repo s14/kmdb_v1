@@ -1,4 +1,29 @@
-<pre><%= @director.to_yaml %></pre>
+<div class="page-header">
+  <h1>Director Details</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>
+        <img src="<%= @director.image_url %>" width="100">
+      </dt>
+      <dd>
+        <p class="lead"><%= @director.name %></p>
+      </dd>
+      <dt>
+      </dt>
+      <dd>
+        <p><%= @director.dob %></p>
+      </dd>
+      <dt>
+      </dt>
+      <dd>
+        <p><%= @director.bio %></p>
+      </dd>
+    </dl>
+  </div>
+</div>
 
 <div class="page-header">
   <h2>Filmography</h2>
@@ -14,4 +39,4 @@
   </div>
 </div>
 
-
+<hr>

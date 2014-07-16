@@ -1,1 +1,22 @@
-<pre><%= @role.to_yaml %></pre>
+<div class="page-header">
+  <h1>Role Details</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>
+        Movie
+      </dt>
+      <dd>
+        <p><%= Movie.find(@role.movie_id).title %></p>
+      </dd>
+      <dt>
+        Actor
+      </dt>
+      <dd>
+        <p><%= Actor.find(@role.actor_id).name %></p>
+      </dd>
+    </dl>
+  </div>
+</div>

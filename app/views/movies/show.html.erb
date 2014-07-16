@@ -1,4 +1,29 @@
-<pre><%= @movie.to_yaml %></pre>
+<div class="page-header">
+  <h1>Movie Details</h1>
+</div>
+
+<div class="row">
+  <div class="col-md-12">
+    <dl class="dl-horizontal">
+      <dt>
+        <img src="<%= @movie.image_url %>" width="100">
+      </dt>
+      <dd>
+        <p class="lead"><%= @movie.title %></p>
+      </dd>
+      <dt>
+      </dt>
+      <dd>
+        <p><%= Director.find(@movie.director_id).name %></p>
+      </dd>
+      <dt>
+      </dt>
+      <dd>
+        <p><%= @movie.description %></p>
+      </dd>
+    </dl>
+  </div>
+</div>
 
 <div class="page-header">
   <h2>Cast</h2>
